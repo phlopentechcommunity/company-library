@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/docs", "destination": "/api/docs.js" },
+    { "source": "/api/openapi", "destination": "/api/openapi.js" },
+    { "source": "/api/companies", "destination": "/api/companies.js" },
+    { "source": "/api/companies/:slug", "destination": "/api/company.js?slug=:slug" }
+  ]
+}
