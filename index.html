@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Library</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">CompanyFinder for infrastructure teams</p>
+      <h1>Find vendors like a NetBox-style library.</h1>
+      <p class="hero-text">Browse company profiles, discover categories and tags, and integrate the same dataset through a Swagger-ready API deployable on Vercel.</p>
+      <form class="search" id="search-form">
+        <input id="query" name="q" placeholder="Search for routers, cloud, Cisco..." />
+        <select id="category" name="category">
+          <option value="">All categories</option>
+          <option>Networking</option>
+          <option>Cloud</option>
+          <option>Security</option>
+          <option>Compute</option>
+          <option>Storage</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+      <div class="actions">
+        <a class="button primary" href="/api/docs">Open Swagger docs</a>
+        <a class="button" href="/api/companies">View JSON API</a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div><p class="eyebrow">Library</p><h2 id="count">Company records</h2></div>
+        <p class="api-hint">API examples: <code>/api/companies?q=switches</code> and <code>/api/companies/cisco</code></p>
+      </div>
+      <div class="grid" id="company-grid"></div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
