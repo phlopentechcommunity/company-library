@@ -1,0 +1,13 @@
+{
+  "name": "company-library",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "node scripts/validate-openapi.mjs",
+    "start": "vercel dev"
+  },
+  "devDependencies": {
+    "vercel": "^44.2.10"
+  }
+}
